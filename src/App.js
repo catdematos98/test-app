@@ -6,11 +6,10 @@ import './App.css';
 
 class App extends Component {
   render() {
-    console.log(this.props.contacts);
     return (
       <div className="App">
         <h1>Contacts List</h1>
-        <ContactsList />
+        <ContactsList contacts={this.props.contacts} />
         <div className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <h2>Welcome to React</h2>
